@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import movieDataJSON from "./data/movie-data"
 import { Header } from './components/Header';
+import { MovieList } from './components/MovieList';
 
 function App() {
   // Load movie data and have a copy of it.
@@ -30,10 +31,16 @@ function App() {
   
 
   return (
+    <>
       <article className="container">
         <Header favourites={favourites}/>
+        <MovieList movies={copyOfMovieData}/>
       </article>
 
+      
+    
+    </>
+    
   )
 }
 
