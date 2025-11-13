@@ -7,9 +7,6 @@ export const MovieList = (props) => {
         return (
           <SingleMovie
             key={m.id}
-            poster={m.poster}
-            title={m.title}
-            tagline={m.tagline}
             singleMovieObject={m}
             addToFavourites={props.addToFavourites}
           />

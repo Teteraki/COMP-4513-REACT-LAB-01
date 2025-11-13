@@ -5,14 +5,17 @@ export const SingleMovie = (props) => {
         <div className="card-image">
           <figure className="image is-2by3">
             <img
-              src={"https://image.tmdb.org/t/p/w342/" + props.poster}
-              alt={props.title}
+              src={
+                "https://image.tmdb.org/t/p/w342/" +
+                props.singleMovieObject.poster
+              }
+              alt={props.singleMovieObject.title}
             ></img>
           </figure>
         </div>
         <div className="card-content has-text-centered content-rectangle">
-          <h2 className="title is-5">{props.title}</h2>
-          <p className="is-size-7">{props.tagline}</p>
+          <h2 className="title is-5">{props.singleMovieObject.title}</h2>
+          <p className="is-size-7">{props.singleMovieObject.tagline}</p>
         </div>
         <footer className="card-footer">
           <button
